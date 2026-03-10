@@ -1,7 +1,6 @@
 ```html
 <!DOCTYPE html>
 <html>
-
 <head>
 
 <meta name="google-site-verification" content="MEq0xfjkwVnQs1Y_vNOc5d78AOtAfSaS4SYwD7KRYnY"/>
@@ -12,68 +11,21 @@
 
 <style>
 
-body{
-font-family:Arial;
-margin:0;
-background:#f4f4f4;
-}
+body{font-family:Arial;margin:0;background:#f2f2f2}
 
-header{
-background:#0a4ea1;
-color:white;
-text-align:center;
-padding:20px;
-}
+header{background:#004aad;color:white;text-align:center;padding:20px}
 
-nav{
-background:#222;
-text-align:center;
-padding:10px;
-}
+nav{background:#222;padding:10px;text-align:center}
 
-nav a{
-color:white;
-margin:15px;
-text-decoration:none;
-font-size:18px;
-}
+nav a{color:white;margin:15px;text-decoration:none;font-size:18px}
 
-section{
-padding:30px;
-}
+section{padding:30px}
 
-.services{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-gap:15px;
-}
+.products{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:20px}
 
-.box{
-background:white;
-padding:20px;
-border-radius:6px;
-box-shadow:0 0 8px rgba(0,0,0,0.2);
-text-align:center;
-}
+.product{background:white;padding:15px;border-radius:8px;text-align:center;box-shadow:0 0 8px rgba(0,0,0,0.2)}
 
-.gallery{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:15px;
-}
-
-.product{
-background:white;
-padding:10px;
-border-radius:6px;
-box-shadow:0 0 6px rgba(0,0,0,0.2);
-text-align:center;
-}
-
-.gallery img{
-width:100%;
-border-radius:6px;
-}
+.product img{width:120px;height:120px}
 
 .whatsapp{
 position:fixed;
@@ -84,14 +36,10 @@ color:white;
 padding:15px;
 border-radius:50px;
 text-decoration:none;
+font-weight:bold
 }
 
-footer{
-background:#0a4ea1;
-color:white;
-text-align:center;
-padding:15px;
-}
+footer{background:#004aad;color:white;text-align:center;padding:15px}
 
 </style>
 
@@ -106,98 +54,52 @@ padding:15px;
 
 <nav>
 <a href="#">Home</a>
-<a href="#services">Services</a>
 <a href="#products">Products</a>
-<a href="#reviews">Reviews</a>
 <a href="#contact">Contact</a>
 </nav>
 
 <section>
 
-<h2>Welcome to BS Computer</h2>
-
-<p>Best laptop and desktop repair shop in Indore.</p>
-
-</section>
-
-<section id="services">
-
-<h2>Our Services</h2>
-
-<div class="services">
-
-<div class="box">Laptop Repair</div>
-<div class="box">Desktop Repair</div>
-<div class="box">Refurbished Laptop Sales</div>
-<div class="box">Refurbished Desktop Sales</div>
-<div class="box">Onsite Computer Service</div>
-
-</div>
-
-</section>
-
-<section id="products">
-
 <h2>Our Products</h2>
 
-<div class="gallery">
+<div class="products">
 
 <div class="product">
-<img src="https://cdn-icons-png.flaticon.com/512/179/179386.png">
+<img src="https://img.icons8.com/color/240/laptop.png">
 <p>Laptop</p>
 </div>
 
 <div class="product">
-<img src="https://cdn-icons-png.flaticon.com/512/3474/3474360.png">
-<p>Desktop Computer</p>
+<img src="https://img.icons8.com/color/240/desktop.png">
+<p>Desktop</p>
 </div>
 
 <div class="product">
-<img src="https://cdn-icons-png.flaticon.com/512/3067/3067571.png">
+<img src="https://img.icons8.com/color/240/keyboard.png">
 <p>Keyboard</p>
 </div>
 
 <div class="product">
-<img src="https://cdn-icons-png.flaticon.com/512/2880/2880274.png">
+<img src="https://img.icons8.com/color/240/mouse.png">
 <p>Mouse</p>
 </div>
 
 <div class="product">
-<img src="https://cdn-icons-png.flaticon.com/512/633/633600.png">
-<p>WiFi Dongle</p>
+<img src="https://img.icons8.com/color/240/ram.png">
+<p>RAM</p>
 </div>
 
 <div class="product">
-<img src="https://cdn-icons-png.flaticon.com/512/1041/1041916.png">
-<p>RAM / SSD</p>
+<img src="https://img.icons8.com/color/240/ssd.png">
+<p>SSD</p>
+</div>
+
+<div class="product">
+<img src="https://img.icons8.com/color/240/wifi.png">
+<p>WiFi Dongle</p>
 </div>
 
 </div>
-
-</section>
-
-<section id="reviews">
-
-<h2>Customer Reviews</h2>
-
-<div class="services">
-
-<div class="box">⭐⭐⭐⭐⭐ Very good laptop repair service.</div>
-<div class="box">⭐⭐⭐⭐⭐ Best refurbished laptop shop.</div>
-<div class="box">⭐⭐⭐⭐⭐ Fast onsite service.</div>
-
-</div>
-
-</section>
-
-<section>
-
-<h2>Our Location</h2>
-
-<iframe 
-src="https://maps.google.com/maps?q=geeta%20bhawan%20indore&t=&z=13&ie=UTF8&iwloc=&output=embed"
-width="100%" height="300">
-</iframe>
 
 </section>
 
@@ -205,23 +107,25 @@ width="100%" height="300">
 
 <h2>Contact Us</h2>
 
-<p><b>Mobile:</b> 9826434226, 8821888860</p>
+<p><b>Mobile:</b> 9826434226 , 8821888860</p>
 
 <p><b>Address:</b> B-28 Alankar Point, Geeta Bhawan, Indore MP 452001</p>
 
 <p><b>Timing:</b> 11 AM – 11 PM</p>
 
+<iframe
+src="https://maps.google.com/maps?q=geeta%20bhawan%20indore&t=&z=13&ie=UTF8&iwloc=&output=embed"
+width="100%" height="300">
+</iframe>
+
 </section>
 
 <footer>
-
-<p>© 2026 BS Computer Indore</p>
-
+© 2026 BS Computer Indore
 </footer>
 
 <a class="whatsapp" href="https://wa.me/919826434226">WhatsApp</a>
 
 </body>
-
 </html>
 ```
