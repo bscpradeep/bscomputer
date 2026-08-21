@@ -64,6 +64,34 @@ nav{gap:12px}
 section{padding:45px 18px}
 .logo{font-size:25px}
 }
+
+/* Modern product-store styling */
+.products-section{padding:80px 20px;background:#f7f9fc}
+.section-head{max-width:780px;margin:0 auto 38px;text-align:center}
+.eyebrow{display:inline-block;font-size:12px;font-weight:800;letter-spacing:1.4px;color:#0757d8;margin-bottom:8px}
+.section-head h2{font-size:clamp(30px,4vw,44px);margin:4px 0 12px;color:#10233f}
+.section-head p{font-size:16px;line-height:1.7;color:#64748b}
+.product-grid{max-width:1200px;margin:auto;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px}
+.product-card{background:#fff;border:1px solid #e5eaf2;border-radius:20px;padding:18px;box-shadow:0 8px 28px rgba(15,23,42,.06);transition:transform .2s,box-shadow .2s;display:flex;flex-direction:column}
+.product-card:hover{transform:translateY(-5px);box-shadow:0 16px 36px rgba(15,23,42,.11)}
+.product-image{height:170px;border-radius:15px;background:linear-gradient(135deg,#eef6ff,#f8fbff);display:flex;align-items:center;justify-content:center;margin-bottom:16px}
+.product-image img{width:135px;height:135px;object-fit:contain}
+.product-image.laptop-icon,.product-image.desktop-icon,.product-image.printer-icon{font-size:72px}
+.product-tag{font-size:10px;font-weight:800;letter-spacing:1px;color:#0757d8;margin-bottom:7px}
+.product-card h3{font-size:21px;margin:0 0 8px;color:#132238}
+.product-card p{font-size:14px;line-height:1.6;color:#64748b;margin:0 0 18px;flex:1}
+.product-bottom{display:flex;align-items:center;justify-content:space-between;gap:10px;border-top:1px solid #edf0f5;padding-top:15px}
+.product-bottom strong{font-size:13px;color:#1f2937}
+.buy-btn{background:#0757d8;color:#fff!important;padding:10px 13px;border-radius:10px;font-size:12px;font-weight:800;text-decoration:none!important;white-space:nowrap}
+.buy-btn:hover{background:#0548b4}
+.store-cta{max-width:1200px;margin:34px auto 0;padding:28px 30px;border-radius:22px;background:linear-gradient(135deg,#062f75,#0879d9);color:#fff;display:flex;align-items:center;justify-content:space-between;gap:25px}
+.store-cta .eyebrow{color:#bfe4ff}
+.store-cta h3{font-size:25px;margin:4px 0 7px}
+.store-cta p{margin:0;color:#dceeff}
+.primary-btn{display:inline-flex;align-items:center;justify-content:center;background:#fff;color:#0757d8!important;padding:13px 18px;border-radius:11px;font-weight:800;text-decoration:none!important;white-space:nowrap}
+@media(max-width:1000px){.product-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:650px){.product-grid{grid-template-columns:1fr}.store-cta{flex-direction:column;align-items:flex-start}.store-cta h3{font-size:21px}.product-image{height:155px}}
+
 </style>
 </head>
 
@@ -148,6 +176,92 @@ section{padding:45px 18px}
 </div>
 </div>
 </section>
+
+
+<!-- PRODUCTS_START -->
+<section id="products" class="section products-section">
+  <div class="section-head">
+    <span class="eyebrow">SHOP COMPUTER PRODUCTS</span>
+    <h2>Products & Upgrades</h2>
+    <p>Popular computer accessories and upgrade parts. Check availability and current price on WhatsApp.</p>
+  </div>
+
+  <div class="product-grid">
+    <article class="product-card">
+      <div class="product-image"><img src="https://img.icons8.com/color/240/keyboard.png" alt="Keyboard"></div>
+      <span class="product-tag">ACCESSORY</span>
+      <h3>Keyboard</h3>
+      <p>Wired and wireless keyboards for office, home and daily use.</p>
+      <div class="product-bottom"><strong>Ask Price</strong><a class="buy-btn" href="https://wa.me/919826434226?text=Hello%20BS%20Computer%2C%20I%20want%20to%20buy%20a%20Keyboard." target="_blank">Buy / Enquire</a></div>
+    </article>
+
+    <article class="product-card">
+      <div class="product-image"><img src="https://img.icons8.com/color/240/mouse.png" alt="Mouse"></div>
+      <span class="product-tag">ACCESSORY</span>
+      <h3>Mouse</h3>
+      <p>Reliable wired and wireless mouse options for work and home.</p>
+      <div class="product-bottom"><strong>Ask Price</strong><a class="buy-btn" href="https://wa.me/919826434226?text=Hello%20BS%20Computer%2C%20I%20want%20to%20buy%20a%20Mouse." target="_blank">Buy / Enquire</a></div>
+    </article>
+
+    <article class="product-card">
+      <div class="product-image"><img src="https://img.icons8.com/color/240/ram.png" alt="RAM"></div>
+      <span class="product-tag">UPGRADE</span>
+      <h3>RAM</h3>
+      <p>RAM upgrades for laptops and desktops. We can check compatibility.</p>
+      <div class="product-bottom"><strong>Ask Price</strong><a class="buy-btn" href="https://wa.me/919826434226?text=Hello%20BS%20Computer%2C%20I%20need%20a%20RAM%20upgrade.%20Please%20check%20compatibility." target="_blank">Check & Buy</a></div>
+    </article>
+
+    <article class="product-card">
+      <div class="product-image"><img src="https://img.icons8.com/color/240/ssd.png" alt="SSD"></div>
+      <span class="product-tag">UPGRADE</span>
+      <h3>SSD</h3>
+      <p>SSD upgrades to make slow laptops and desktops much faster.</p>
+      <div class="product-bottom"><strong>Ask Price</strong><a class="buy-btn" href="https://wa.me/919826434226?text=Hello%20BS%20Computer%2C%20I%20need%20an%20SSD%20upgrade.%20Please%20suggest%20one." target="_blank">Check & Buy</a></div>
+    </article>
+
+    <article class="product-card">
+      <div class="product-image"><img src="https://img.icons8.com/color/240/wifi.png" alt="Wi-Fi Dongle"></div>
+      <span class="product-tag">NETWORK</span>
+      <h3>Wi-Fi Dongle</h3>
+      <p>Wireless connectivity solutions for desktops and other compatible PCs.</p>
+      <div class="product-bottom"><strong>Ask Price</strong><a class="buy-btn" href="https://wa.me/919826434226?text=Hello%20BS%20Computer%2C%20I%20want%20a%20Wi-Fi%20Dongle." target="_blank">Buy / Enquire</a></div>
+    </article>
+
+    <article class="product-card featured-product">
+      <div class="product-image laptop-icon">💻</div>
+      <span class="product-tag">SALES</span>
+      <h3>Laptop</h3>
+      <p>New and selected refurbished laptops for work, study and business.</p>
+      <div class="product-bottom"><strong>Available Models</strong><a class="buy-btn" href="https://wa.me/919826434226?text=Hello%20BS%20Computer%2C%20I%20want%20to%20buy%20a%20Laptop.%20Please%20share%20available%20models." target="_blank">View Models</a></div>
+    </article>
+
+    <article class="product-card featured-product">
+      <div class="product-image desktop-icon">🖥️</div>
+      <span class="product-tag">SALES</span>
+      <h3>Desktop PC</h3>
+      <p>Desktop computers, upgrades and configurations for office and home.</p>
+      <div class="product-bottom"><strong>Custom Build</strong><a class="buy-btn" href="https://wa.me/919826434226?text=Hello%20BS%20Computer%2C%20I%20need%20a%20Desktop%20PC.%20Please%20share%20available%20options." target="_blank">Get Quote</a></div>
+    </article>
+
+    <article class="product-card featured-product">
+      <div class="product-image printer-icon">🖨️</div>
+      <span class="product-tag">OFFICE</span>
+      <h3>Printer</h3>
+      <p>Printer sales, installation, drivers and troubleshooting support.</p>
+      <div class="product-bottom"><strong>Ask Price</strong><a class="buy-btn" href="https://wa.me/919826434226?text=Hello%20BS%20Computer%2C%20I%20need%20a%20Printer.%20Please%20share%20available%20models." target="_blank">View Models</a></div>
+    </article>
+  </div>
+
+  <div class="store-cta">
+    <div>
+      <span class="eyebrow">NEED HELP CHOOSING?</span>
+      <h3>Tell us what you need — we'll suggest the right product.</h3>
+      <p>Send your laptop/desktop model or your requirement on WhatsApp.</p>
+    </div>
+    <a class="primary-btn" href="https://wa.me/919826434226?text=Hello%20BS%20Computer%2C%20I%20need%20help%20choosing%20a%20computer%20product." target="_blank">💬 Ask on WhatsApp</a>
+  </div>
+</section>
+<!-- PRODUCTS_END -->
 
 <section id="reviews">
 <h2 class="section-title">Customer Reviews</h2>
