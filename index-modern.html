@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BS Computers | Computer Sales, Repair & Service in Indore</title>
+<meta name="description" content="BS Computers Indore - Laptop, Desktop, Computer Accessories, Repair, Refurbished Sales and Onsite Service.">
+<meta name="google-site-verification" content="MEq0xfjkwVnQs1Y_vNOc5d78AOtAfSaS4SYwD7KRYnY">
+<style>
+:root{--primary:#0b5cff;--dark:#07111f;--text:#172033;--muted:#667085;--bg:#f5f7fb;--white:#fff;--green:#16a34a;--border:#e6eaf0}
+*{box-sizing:border-box;scroll-behavior:smooth}
+body{margin:0;font-family:Inter,Segoe UI,Arial,sans-serif;color:var(--text);background:var(--bg);line-height:1.6}
+a{text-decoration:none;color:inherit}
+.container{width:min(1180px,92%);margin:auto}
+.topbar{background:#06101f;color:#dbe7ff;font-size:13px;padding:7px 0}
+.topbar .container{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
+header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.96);backdrop-filter:blur(12px);border-bottom:1px solid var(--border)}
+.nav{min-height:72px;display:flex;align-items:center;gap:22px}
+.logo{font-size:25px;font-weight:900;letter-spacing:-.7px;color:#07111f;white-space:nowrap}
+.logo span{color:var(--primary)}
+.navlinks{display:flex;gap:22px;margin-left:auto;font-weight:600;font-size:14px}
+.navlinks a:hover{color:var(--primary)}
+.navbtn{background:var(--primary);color:white;padding:11px 17px;border-radius:10px;font-weight:800}
+.menu{display:none;border:0;background:none;font-size:25px}
+.hero{background:linear-gradient(135deg,#06111f 0%,#0b2e69 55%,#0b5cff 100%);color:#fff;padding:76px 0 70px;overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;align-items:center;gap:40px}
+.badge{display:inline-block;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.2);padding:7px 12px;border-radius:999px;font-size:13px;font-weight:700}
+.hero h1{font-size:clamp(38px,5vw,64px);line-height:1.05;margin:18px 0}
+.hero h1 span{color:#8db8ff}
+.hero p{font-size:18px;color:#d9e5ff;max-width:650px}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:13px 20px;border-radius:11px;font-weight:800}
+.btn.primary{background:#fff;color:#0757e8}.btn.whatsapp{background:#19b957;color:#fff}.btn.outline{border:1px solid rgba(255,255,255,.35);color:#fff}
+.hero-card{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.18);border-radius:24px;padding:28px;box-shadow:0 20px 60px rgba(0,0,0,.2)}
+.hero-card h3{margin-top:0;font-size:22px}
+.stat{display:flex;justify-content:space-between;padding:13px 0;border-bottom:1px solid rgba(255,255,255,.15)}
+.stat:last-child{border-bottom:0}
+section{padding:70px 0}
+.section-head{text-align:center;margin-bottom:34px}
+.section-head .eyebrow{color:var(--primary);font-size:13px;font-weight:900;text-transform:uppercase;letter-spacing:1.5px}
+.section-head h2{font-size:36px;line-height:1.15;margin:8px 0}
+.section-head p{color:var(--muted);max-width:680px;margin:auto}
+.categories{display:grid;grid-template-columns:repeat(8,1fr);gap:12px}
+.cat{background:#fff;border:1px solid var(--border);border-radius:16px;padding:18px 8px;text-align:center;font-weight:800;box-shadow:0 5px 18px rgba(16,24,40,.04);transition:.2s}
+.cat:hover{transform:translateY(-4px);border-color:#bdd1ff}
+.cat .icon{font-size:29px;display:block;margin-bottom:7px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{background:#fff;border:1px solid var(--border);border-radius:18px;overflow:hidden;box-shadow:0 7px 25px rgba(16,24,40,.05)}
+.product-img{height:210px;background:#f7f9fc;display:flex;align-items:center;justify-content:center;padding:18px}
+.product-img img{max-width:100%;max-height:175px;object-fit:contain}
+.product-body{padding:20px}
+.product-body h3{margin:0 0 6px;font-size:20px}
+.product-body p{margin:0 0 15px;color:var(--muted);font-size:14px}
+.price{font-size:21px;font-weight:900;margin-bottom:14px}
+.smallbtn{display:inline-block;padding:10px 14px;border-radius:9px;background:#eef4ff;color:#0757e8;font-weight:800;font-size:14px}
+.service{padding:25px}
+.service .icon{font-size:34px}
+.service h3{margin:8px 0 5px}
+.service p{color:var(--muted);font-size:14px}
+.dark-section{background:#07111f;color:white}
+.dark-section .section-head p{color:#b9c5d8}
+.service-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.service-card{background:#101d30;border:1px solid #20324d;border-radius:17px;padding:24px}
+.service-card p{color:#b9c5d8;font-size:14px}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:35px;align-items:center}
+.about-box{background:#fff;border:1px solid var(--border);border-radius:20px;padding:30px}
+.check{display:flex;gap:10px;margin:10px 0}
+.review{padding:24px}
+.stars{color:#f59e0b;font-size:18px}
+.contact-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:25px}
+.contact-card{background:#fff;border:1px solid var(--border);border-radius:18px;padding:28px}
+.contact-item{padding:13px 0;border-bottom:1px solid var(--border)}
+.contact-item:last-child{border:0}
+.map{width:100%;height:360px;border:0;border-radius:18px}
+footer{background:#040a12;color:#b9c5d8;padding:38px 0 20px}
+.footer-grid{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:30px}
+footer h3,footer h4{color:#fff;margin-top:0}
+.copyright{border-top:1px solid #1b2736;margin-top:28px;padding-top:18px;font-size:13px;text-align:center}
+.float{position:fixed;right:20px;bottom:20px;z-index:100;background:#19b957;color:#fff;padding:14px 18px;border-radius:999px;font-weight:900;box-shadow:0 10px 30px rgba(0,0,0,.2)}
+@media(max-width:950px){.categories{grid-template-columns:repeat(4,1fr)}.service-grid{grid-template-columns:repeat(2,1fr)}.hero-grid,.about,.contact-grid{grid-template-columns:1fr}.grid{grid-template-columns:repeat(2,1fr)}.navlinks{display:none}.menu{display:block;margin-left:auto}}
+@media(max-width:600px){.topbar .container{justify-content:center}.nav{min-height:62px}.hero{padding:55px 0}.hero h1{font-size:42px}.section-head h2{font-size:29px}.categories{grid-template-columns:repeat(2,1fr)}.grid,.service-grid,.footer-grid{grid-template-columns:1fr}section{padding:52px 0}.navbtn{display:none}}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="container">
+    <span>📍 Geeta Bhawan, Indore</span>
+    <span>🕐 Open: 11 AM – 11 PM &nbsp; | &nbsp; 📞 9826434226</span>
+  </div>
+</div>
+
+<header>
+  <div class="container nav">
+    <a class="logo" href="#home">BS <span>COMPUTERS</span></a>
+    <nav class="navlinks">
+      <a href="#home">Home</a>
+      <a href="#categories">Shop</a>
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="navbtn" href="https://wa.me/919826434226?text=Hello%20BS%20Computers%2C%20I%20need%20help">WhatsApp</a>
+    <button class="menu" aria-label="Menu">☰</button>
+  </div>
+</header>
+
+<main id="home">
+<section class="hero">
+  <div class="container hero-grid">
+    <div>
+      <span class="badge">💻 SALES • SERVICE • SUPPORT</span>
+      <h1>Your Trusted <span>Computer Partner</span> in Indore</h1>
+      <p>Laptops, desktops, accessories, refurbished systems and professional computer repair — all under one roof.</p>
+      <div class="actions">
+        <a class="btn primary" href="#products">🛒 Explore Products</a>
+        <a class="btn whatsapp" href="https://wa.me/919826434226?text=Hello%20BS%20Computers%2C%20I%20need%20computer%20service">💬 WhatsApp Us</a>
+        <a class="btn outline" href="tel:9826434226">📞 Call Now</a>
+      </div>
+    </div>
+    <div class="hero-card">
+      <h3>Why choose BS Computers?</h3>
+      <div class="stat"><span>🛠️ Computer Repair</span><strong>Expert Support</strong></div>
+      <div class="stat"><span>💻 Refurbished Systems</span><strong>Value Deals</strong></div>
+      <div class="stat"><span>🏢 Onsite Service</span><strong>At Your Office</strong></div>
+      <div class="stat"><span>🖨️ Printer & Software</span><strong>Complete Setup</strong></div>
+    </div>
+  </div>
+</section>
+
+<section id="categories">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">Shop by category</div>
+      <h2>Everything your computer needs</h2>
+      <p>Browse popular computer products and accessories. Online ordering and product pricing can be added next.</p>
+    </div>
+    <div class="categories">
+      <a class="cat" href="#products"><span class="icon">💻</span>Laptops</a>
+      <a class="cat" href="#products"><span class="icon">🖥️</span>Desktop</a>
+      <a class="cat" href="#products"><span class="icon">🧠</span>RAM</a>
+      <a class="cat" href="#products"><span class="icon">💾</span>SSD</a>
+      <a class="cat" href="#products"><span class="icon">⌨️</span>Keyboard</a>
+      <a class="cat" href="#products"><span class="icon">🖱️</span>Mouse</a>
+      <a class="cat" href="#products"><span class="icon">🖨️</span>Printer</a>
+      <a class="cat" href="#products"><span class="icon">🔌</span>Accessories</a>
+    </div>
+  </div>
+</section>
+
+<section id="products">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">Featured products</div>
+      <h2>Popular products</h2>
+      <p>Product catalogue is ready. We can add your complete stock, prices and online checkout after this homepage is live.</p>
+    </div>
+    <div class="grid">
+      <article class="card">
+        <div class="product-img"><img src="laptop.jpg" alt="Laptop"></div>
+        <div class="product-body"><h3>Laptops</h3><p>New and refurbished laptops for home, office and business use.</p><a class="smallbtn" href="https://wa.me/919826434226?text=Hello%20BS%20Computers%2C%20I%20want%20to%20buy%20a%20laptop">Enquire on WhatsApp →</a></div>
+      </article>
+      <article class="card">
+        <div class="product-img"><img src="mouse.jpg" alt="Computer Mouse"></div>
+        <div class="product-body"><h3>Keyboard & Mouse</h3><p>Reliable computer accessories for office and home setups.</p><a class="smallbtn" href="https://wa.me/919826434226?text=Hello%20BS%20Computers%2C%20I%20want%20keyboard%20and%20mouse">Check Availability →</a></div>
+      </article>
+      <article class="card">
+        <div class="product-img"><div style="font-size:95px">💾</div></div>
+        <div class="product-body"><h3>RAM & SSD</h3><p>Upgrade your PC or laptop with RAM, SATA SSD and NVMe storage.</p><a class="smallbtn" href="https://wa.me/919826434226?text=Hello%20BS%20Computers%2C%20I%20need%20RAM%20or%20SSD">Get a Quote →</a></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="services" class="dark-section">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">Our services</div>
+      <h2>Professional IT support</h2>
+      <p>From a slow laptop to complete office setup, BS Computers provides practical support for your systems.</p>
+    </div>
+    <div class="service-grid">
+      <div class="service-card"><div class="icon">💻</div><h3>Laptop Repair</h3><p>Hardware troubleshooting, Windows, SSD/RAM upgrades and general repair.</p></div>
+      <div class="service-card"><div class="icon">🖥️</div><h3>Desktop Repair</h3><p>PC assembly, upgrade, troubleshooting and maintenance.</p></div>
+      <div class="service-card"><div class="icon">🏢</div><h3>Onsite Service</h3><p>Computer, printer and network support at your office.</p></div>
+      <div class="service-card"><div class="icon">🖨️</div><h3>Printer & Software</h3><p>Printer setup, drivers, Windows, Office and Tally installation.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="container about">
+    <div>
+      <div class="section-head" style="text-align:left;margin-bottom:20px">
+        <div class="eyebrow">About BS Computers</div>
+        <h2>Local support you can trust</h2>
+      </div>
+      <p>BS Computers provides computer sales, repair, refurbished systems and onsite IT support in Indore. Our focus is straightforward advice, dependable service and practical solutions.</p>
+      <div class="check">✅ Laptop & Desktop Sales</div>
+      <div class="check">✅ Refurbished Laptop & Desktop</div>
+      <div class="check">✅ Repair & Upgrades</div>
+      <div class="check">✅ Office / Onsite Support</div>
+    </div>
+    <div class="about-box">
+      <h3>Need help right now?</h3>
+      <p>Send your requirement on WhatsApp and we will help you with availability, pricing or service.</p>
+      <div class="actions">
+        <a class="btn whatsapp" href="https://wa.me/919826434226?text=Hello%20BS%20Computers%2C%20I%20need%20help">WhatsApp</a>
+        <a class="btn" style="background:#07111f;color:#fff" href="tel:9826434226">Call 9826434226</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="reviews">
+  <div class="container">
+    <div class="section-head"><div class="eyebrow">Customer feedback</div><h2>What customers say</h2><p>Real customer reviews can be connected here from your Google Business Profile later.</p></div>
+    <div class="grid">
+      <div class="card review"><div class="stars">★★★★★</div><h3>Fast service</h3><p>Very fast laptop repair service.</p></div>
+      <div class="card review"><div class="stars">★★★★★</div><h3>Good support</h3><p>Helpful computer service and reasonable solutions.</p></div>
+      <div class="card review"><div class="stars">★★★★★</div><h3>Good value</h3><p>Affordable refurbished laptops and computer support.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="container">
+    <div class="section-head"><div class="eyebrow">Contact us</div><h2>Let's get your computer sorted</h2></div>
+    <div class="contact-grid">
+      <div class="contact-card">
+        <div class="contact-item"><strong>📞 Phone</strong><br><a href="tel:9826434226">9826434226</a> · <a href="tel:8821888860">8821888860</a></div>
+        <div class="contact-item"><strong>📍 Address</strong><br>B-28 Alankar Point, Geeta Bhawan, Indore, MP 452001</div>
+        <div class="contact-item"><strong>🕐 Business Hours</strong><br>11 AM – 11 PM</div>
+        <div class="contact-item"><strong>💬 WhatsApp</strong><br><a style="color:#0a9f4b;font-weight:800" href="https://wa.me/919826434226?text=Hello%20BS%20Computers">Chat with BS Computers</a></div>
+      </div>
+      <iframe class="map" src="https://maps.google.com/maps?q=geeta%20bhawan%20indore&t=&z=13&ie=UTF8&iwloc=&output=embed" loading="lazy" title="BS Computers location"></iframe>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="container footer-grid">
+    <div><h3>BS COMPUTERS</h3><p>Computer sales, repair, refurbished systems and onsite IT support in Indore.</p></div>
+    <div><h4>Quick Links</h4><p><a href="#products">Products</a><br><a href="#services">Services</a><br><a href="#reviews">Reviews</a></p></div>
+    <div><h4>Contact</h4><p>📞 9826434226<br>📍 Geeta Bhawan, Indore<br>🕐 11 AM – 11 PM</p></div>
+  </div>
+  <div class="container copyright">© BS Computers Indore · All Rights Reserved</div>
+</footer>
+
+<a class="float" href="https://wa.me/919826434226?text=Hello%20BS%20Computers%2C%20I%20need%20help">💬 WhatsApp</a>
+</body>
+</html>
